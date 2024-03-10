@@ -5,5 +5,5 @@ const WorkArea = () => {
     <div className="workArea-container">WorkArea</div>
   )
 }
-// i love
+
 export default WorkArea
