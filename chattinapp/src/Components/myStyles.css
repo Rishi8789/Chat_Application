@@ -46,11 +46,11 @@
 }
 
 .sb-conversation{
-    border-radius: 21px;
+    border-radius: 20px;
     background-color: white;
     display: flex;
     /* justify-content: space-between; */
     padding: 5px 5px;
-    margin: 5px;
+    margin: 6px;
     flex: 1;
 }
