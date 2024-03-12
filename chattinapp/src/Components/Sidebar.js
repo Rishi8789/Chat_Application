@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./myStyles.css";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
@@ -10,6 +10,27 @@ import { IconButton } from '@mui/material';
 import ConversationItem from './ConversationItem';
 
 const Sidebar = () => {
+
+  const[conversation,setConversation]= useState([
+    {
+      name:"Task1",
+      lastMessage:"Last Message #1",
+      timeStamp:"today"
+    }
+    ,
+    {
+      name:"Task2",
+      lastMessage:"Last Message #2",
+      timeStamp:"today"
+    }
+    ,
+    {
+      name:"Task3",
+      lastMessage:"Last Message #3",
+      timeStamp:"today"
+    }
+  ])
+
   return (
     <div className='sidebar-container'>
 
@@ -46,7 +67,12 @@ const Sidebar = () => {
 
      </div>
      <div className='sb-conversation'>
-      <ConversationItem/>
+     {
+      conversation.map((conversation)=>{
+        return   <ConversationItem props={conversation}/>
+      })
+     }
+    
      </div>
 
     </div>
