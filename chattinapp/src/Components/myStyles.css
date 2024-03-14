@@ -13,10 +13,22 @@
     flex-direction: column;
 }
 
-.workArea-container{
+.chatArea-container{
     /* border: 5px solid rgb(83, 107, 83); */
-    
+    display: flex;
     flex:0.7;
+    flex-direction: column;
+}
+
+.chatArea-header{
+    background-color: orange;
+}
+.message-container{
+    background-color: aquamarine;
+    flex: 1;
+}
+.text-input-area{
+    background-color: yellow;
 }
 
 .sb-header{
@@ -47,9 +59,9 @@
 
 .sb-conversation{
     border-radius: 20px;
-    background-color: white;
-    display: flex;
-    /* justify-content: space-between; */
+    background-color: rgb(255, 255, 255);
+    /* display: flex; */
+    justify-content: space-between;
     padding: 5px 5px;
     margin: 5px;
     flex: 1;
@@ -57,7 +69,7 @@
 
 .conversation-container{
     display: grid;
-    grid-template-columns:32px auto auto;
+    grid-template-columns: 32px auto auto;
     grid-template-rows: auto auto;
     column-gap:10px;
     padding: 5px;
